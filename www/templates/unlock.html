@@ -1,0 +1,20 @@
+<ion-view title="INSIDER ACCESS" id="page4" class="doorman-bg" style="color:#000000;">
+        <ion-nav-back-button hide-back-button="true">
+        </ion-nav-back-button>
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <div class="spacer" style="width: 285px; height: 220px;"></div>
+        <form class="list" name="unlockForm">
+        <label class="item item-input item-clear">
+            <input type="text" placeholder="STAYTUS KEY" ng-model="unlockCtrl.unlockKey" name="unlockKey" ng-minlength="4" required>
+        </label>
+        <div id="page-markdown1" style="color:#000000;text-align:center;">
+            <p> Get your Staytus key from the front desk or outlet staff.</p>
+        </div>
+        <div class="spacer" style="width: 285px; height: 20px;"></div>
+        <div class="padding" style="color:#cf6557;text-align:center;">
+            <p ng-show="unlockForm.unlockKey.$error.minlength && !unlockForm.unlockKey.$pristine">*Please enter a correct key</p>
+        </div>
+        <a id="page-button1" type="submit" class="button button-dark button-block button-outline" ng-disabled="unlockForm.$invalid" ng-click="unlockCtrl.unlock(unlockKey)">UNLOCK MY STAYTUS</a>
+        </form>
+    </ion-content>
+</ion-view>

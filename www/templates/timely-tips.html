@@ -1,0 +1,17 @@
+<ion-view title=""  id="page5" class="doorman-bg" style="color:#000000;" hide-nav-bar="true">
+    <ion-content overflow-scroll="true" padding="false">
+        <ion-slide-box style="height: 100%" on-slide-changed="tipsCtrl.slideChanged($index)">
+            <ion-slide ng-repeat="tip in tipsCtrl.feed.cards" class="full-slider">
+                <img ng-src="{{tipsCtrl.CMSServerUrl + tip.image}}" class="fullscreen-image">
+                <div style="color:{{tip.color}}" class="img-caption-{{tip.position}}" >
+                    <h4 ng-bind-html="tipsCtrl.replaceBackline(tip.title)" style="color:{{tip.color}}"></h4>
+                    <p ng-bind-html="tipsCtrl.replaceBackline(tip.description)"></p>
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+
+        <div class="bar bar-footer footer-no-line" ng-show="tipsCtrl.feed.cards">
+            <a class="button button-icon icon ion-navicon" ng-style="tipsCtrl.tipColorStyle" ng-click=""></a>
+            <a class="button button-icon icon ion-share" ng-style="tipsCtrl.tipColorStyle"></a>
+        </div>
+</ion-view>

@@ -1,0 +1,14 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/Users/sabrine/Workspace/Cordova/ionic/Staytus/platforms/ios/platform_www/plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
+        "/Users/sabrine/Workspace/Cordova/ionic/Staytus/platforms/android/assets/www/plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
+        "/Users/sabrine/Workspace/Cordova/ionic/Staytus/platforms/ios/www/js/controllers.js",
+        "/Users/sabrine/Workspace/Cordova/ionic/Staytus/platforms/ios/www/js/directives.js",
+        "/Users/sabrine/Workspace/Cordova/ionic/Staytus/platforms/ios/www/js/routes.js",
+        "/Users/sabrine/Workspace/Cordova/ionic/Staytus/platforms/ios/www/js/services.js",
+        "/Users/sabrine/Workspace/Cordova/ionic/Staytus/platforms/ios/www/lib/ionic/js/ionic-angular.js",
+        "/Users/sabrine/Workspace/Cordova/ionic/Staytus/platforms/ios/www/lib/ionic/js/ionic-angular.min.js",
+        "/Users/sabrine/Workspace/Cordova/ionic/Staytus/www/js/app.js",
+        "/Users/sabrine/Workspace/Cordova/ionic/Staytus/platforms/ios/www/lib/ionic/js/ionic.js"
+    ]
+}

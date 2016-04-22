@@ -1,0 +1,33 @@
+<ion-view title="SIGN IN TO ACCOUNT" id="page3" style="background-color:#000000;">
+    <ion-nav-title style="color: #ffffff">
+        SIGN IN TO ACCOUNT
+    </ion-nav-title>
+    <ion-nav-back-button class="button-clear button-light">
+        <i class="ion-arrow-left-c"></i> Back
+    </ion-nav-back-button>
+
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <form class="list" name="signinForm">
+            <ion-list>
+                <label class="item item-input">
+                    <span class="input-label">Email</span>
+                    <input type="email" placeholder="" ng-model="signInCtrl.email" name="email" required>
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" placeholder="" ng-model="signInCtrl.password" name="password" ng-minlength="6" required>
+                </label>
+            </ion-list>
+            <div class="padding" style="color:#cf6557;text-align:center;">
+                <p ng-show="signinForm.email.$invalid && !signinForm.email.$pristine">*email is required</p>
+                <p ng-show="signinForm.password.$error.minlength && !signinForm.password.$pristine">* Password must be longer than 6 characters</p>
+            </div>
+            <div class="spacer" style="height: 40px;"></div>
+            <div id="sIGNINTOACCOUNT-markdown4" style="color:#FFFFFF;text-align:center;">
+                <p>By signing up, I agree to Staytus' Terms of Service &amp; Privacy Policy</p>
+            </div>
+            <button type="submit" id="sIGNINTOACCOUNT-button3" class="button button-light  button-block button-outline" ng-disabled="signinForm.$invalid" ng-click="signInCtrl.signin(signInCtrl.email,signInCtrl.password)">Log in</button>
+            <a ui-sref="createAccount"  id="sIGNINTOACCOUNT-button4" class="button button-light  button-block button-clear">Not yet an Insider? Sign up</a>
+        </form>
+    </ion-content>
+</ion-view>
